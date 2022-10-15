@@ -8,6 +8,6 @@ titlehead = 'Home'
 
 def home(request):
     # return HttpResponse(home2.head+home2.body)
-    return HttpResponse(varyfunbase.head1+titlehead+varyfunbase.head2+varyfun.SaltoLinea+varyfun.var1)
+    return HttpResponse(varyfunbase.head1+titlehead+varyfunbase.head2)
 
 

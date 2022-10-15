@@ -1,8 +1,6 @@
 
-head1 = '''
-<!DOCTYPE html>
-<html lang="en">
-
+head1 = '''<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,10 +13,12 @@ head1 = '''
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>'''
+    <title>
+'''
   
-head2 = ''' </title>
-  <body>
+head2 = '''</title>
+</head>
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Logo</a>
@@ -47,7 +47,6 @@ head2 = ''' </title>
             </div>
         </div>
     </nav>
-
     <section class="ContentBackground divlogin">
         <article class="loginform">
             <div class="form-wrap">
@@ -56,7 +55,6 @@ head2 = ''' </title>
                     <h3 class="signup-tab"><a class="active" href="#signup-tab-content">Quiero registrarme</a></h3>
                 </div>
                 <!--.tabs-->
-
                 <div class="tabs-content">
                     <div id="signup-tab-content" class="active">
                         <form class="signup-form" action="" method="post">
@@ -74,7 +72,6 @@ head2 = ''' </title>
                         <!--.help-text-->
                     </div>
                     <!--.signup-tab-content-->
-
                     <div id="login-tab-content">
                         <form class="login-form" action="" method="post">
                             <input type="text" class="input" id="user_login" autocomplete="off"
@@ -83,7 +80,6 @@ head2 = ''' </title>
                                 placeholder="Contraseña">
                             <input type="checkbox" class="checkbox" id="remember_me">
                             <label for="remember_me">Recordarme</label>
-
                             <input type="submit" class="button" value="Enviar">
                         </form>
                         <!--.login-form-->
@@ -99,8 +95,6 @@ head2 = ''' </title>
             <!--.form-wrap-->
         </article>
     </section>
-
-
     <footer>
         <div class="container-fluid">
             <div class="row">
@@ -150,9 +144,7 @@ head2 = ''' </title>
                     </ul>
                 </div>
             </div>
-
             <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
-
             <div class="row text-center">
                 <div class="col-md-4 box">
                     <span class="copyright quick-links">Copyright &copy; Match
@@ -199,5 +191,5 @@ head2 = ''' </title>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="static/site/js/form.js"></script>
-
-</html>'''
+</html>
+'''

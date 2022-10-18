@@ -1,4 +1,3 @@
-
 head1 = '''<!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,11 +16,12 @@ head1 = '''<!DOCTYPE html>
 '''
   
 head2 = '''</title>
-</head>
-<body>
+</head>'''
+
+navbar = '''<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="/">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,7 +36,7 @@ head2 = '''</title>
                         <a class="nav-link" href="#">Información</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Seguridad</a>
+                        <a class="nav-link" href="/faq">FAQ</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mb-2 mb-lg-0">
@@ -46,56 +46,9 @@ head2 = '''</title>
                 </ul>
             </div>
         </div>
-    </nav>
-    <section class="ContentBackground divlogin">
-        <article class="loginform">
-            <div class="form-wrap">
-                <div class="tabs">
-                    <h3 class="login-tab"><a href="#login-tab-content">Ya soy miembro</a></h3>
-                    <h3 class="signup-tab"><a class="active" href="#signup-tab-content">Quiero registrarme</a></h3>
-                </div>
-                <!--.tabs-->
-                <div class="tabs-content">
-                    <div id="signup-tab-content" class="active">
-                        <form class="signup-form" action="" method="post">
-                            <input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
-                            <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Usuario">
-                            <input type="password" class="input" id="user_pass" autocomplete="off"
-                                placeholder="Contraseña">
-                            <input type="submit" class="button" value="Registrar">
-                        </form>
-                        <!--.login-form-->
-                        <div class="help-text">
-                            <p>Al aceptar, aceptas nuestros</p>
-                            <p><a href="#">Términos de servicio</a></p>
-                        </div>
-                        <!--.help-text-->
-                    </div>
-                    <!--.signup-tab-content-->
-                    <div id="login-tab-content">
-                        <form class="login-form" action="" method="post">
-                            <input type="text" class="input" id="user_login" autocomplete="off"
-                                placeholder="Email o Usuario">
-                            <input type="password" class="input" id="user_pass" autocomplete="off"
-                                placeholder="Contraseña">
-                            <input type="checkbox" class="checkbox" id="remember_me">
-                            <label for="remember_me">Recordarme</label>
-                            <input type="submit" class="button" value="Enviar">
-                        </form>
-                        <!--.login-form-->
-                        <div class="help-text">
-                            <p><a href="#">Olvide mi contraseña</a></p>
-                        </div>
-                        <!--.help-text-->
-                    </div>
-                    <!--.login-tab-content-->
-                </div>
-                <!--.tabs-content-->
-            </div>
-            <!--.form-wrap-->
-        </article>
-    </section>
-    <footer>
+    </nav>'''
+
+footer = '''    <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 footer-column">

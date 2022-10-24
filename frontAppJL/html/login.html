@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowMe, We will be Friends Forever!</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section id="seccion_1">
+        <div class="video">
+            <video src="../media/videos/videoFondoApp.mp4" autoplay="true" muted="true" loop="true"></video>
+        </div>
+        <div class="knowMe">
+            <div id="barra-navegacion">
+                <div id="logo"> 
+                    <a href="https://aulasvirtuales.bue.edu.ar/" target="_blank"><img src="../media/img/logoFrontApp2.jpg" alt="logoKnowMe" height="100px" width="120px"></a>
+                    <h1> KnowMe </h1>
+                </div>
+                <nav id="menu">
+                    <ul>   
+                        <li><a href="#seccion_1"> Inicio </a></li>
+                        <li><a href="#seccion_2"> Login </a></li>
+                        <li><a href="#seccion_3"> Acerca De </a></li>
+                        <li><a href="#seccion_4"> Producto </a></li>
+                        <li><a href="#seccion_5"> Seguridad </a></li>
+                    </ul>    
+                </nav>
+            </div>
+            <div class="container">
+                <p><span id="logo_center1"> ¡Sere<span id="logo_center2">mos Am</span><span id="logo_center3">igos p</span><span id="logo_center2">or Sie</span>mpre!</p>
+            </div>
+        </div>
+    </section>
+    <section id="seccion_2">
+        <div class="seccion_2_fondo">
+            <img src="../media/img/opcion_2.jpg" alt="">
+        </div>
+        <input type=button id="capa3"  onclick="mostrarFormulario()" value="Iniciar Sesión"/>
+        <div id="Formulario"> <!-- class="modal-content" -->
+            <div class="container_form">
+                <div class="container_form sign-up">
+                    <div class="welcome-back">
+                        <div class="message">
+                            <h2>Bienvenido a <span id="title_form">KnowMe</span></h2>
+                            <p>Si ya tiene una cuenta,<br> Por favor inicie sesión aquí</p>
+                            <button class="sign-up-btn">Iniciar Sesion</button>
+                        </div>
+                    </div>
+                    <form class="formulario">
+                        <h2 class="create-account">Crear una cuenta</h2>
+                        <div class="iconos">
+                            <div class="border-icon">
+                                <i class='bx bxl-instagram'></i>
+                            </div>
+                            <div class="border-icon">
+                                <i class='bx bxl-linkedin' ></i>
+                            </div>
+                            <div class="border-icon">
+                                <i class='bx bxl-facebook-circle' ></i>
+                            </div>
+                        </div>
+                        <p class="cuenta-gratis">Crear una cuenta gratis</p>
+                        <input type="text" placeholder="Nombre">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Contraseña">
+                        <input type="button" value="Registrarse">
+                    </form>
+                </div>
+                <div class="container_form sign-in">
+                    <form class="formulario" name="passwordField">
+                        <h2 class="create-account">Iniciar Sesion</h2>
+                        <div class="iconos">
+                            <div class="border-icon">
+                                <i class='bx bxl-instagram'></i>
+                            </div>
+                            <div class="border-icon">
+                                <i class='bx bxl-linkedin' ></i>
+                            </div>
+                            <div class="border-icon">
+                                <i class='bx bxl-facebook-circle' ></i>
+                            </div>
+                        </div>
+                        <p class="cuenta-gratis">¿Aún no tiene una Cuenta?</p>
+                        <input type="email" placeholder="Email">
+                        <input type="password" class="form-control" id="Password2" placeholder="Password">
+                        <button type="submit" class="btn btn-default">Enviar</button>
+                    </form>
+
+                    <div id="Formulario"> <!--  class="modal-content" -->
+                        <div class="container_form">
+                            <form name="passwordField" >
+                                <div class="form_group">
+                                    <label for="exampleInputPassword1"><h4>Por favor Ingresa tus Datos de Registro</h4></label>
+                                    <input type="password" class="form-control" id="Password1" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-default">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="welcome-back">
+                        <div class="message">
+                            <h2>Bienvenido de nuevo</h2>
+                            <p>Si aún no tiene una Cuenta,<br> Por favor regístrese aquí</p>
+                            <button class="sign-in-btn">Registrarse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="grid-container">
+                <div class="grid-item">
+                    <h3>PRODUCTOS</h3>
+                    <a class="footlink" href="">Producto 1</a>
+                    <a class="footlink" href="">Producto 2</a>
+                    <a class="footlink" href="">Planes & Precios</a>
+                    <a class="footlink" href="">Preguntas Frecuentes</a>
+                </div>
+                <div class="grid-item">
+                    <h3>COMPAÑÍA</h3>
+                    <a class="footlink" href="">Acerca de</a>
+                </div>
+                <div class="grid-item">
+                    <h3>CONTACTO & SOPORTE</h3>
+                    <p>+54 11 2721 8440</p>
+                </div>  
+                <div class="grid-item">
+                    <p>Copyright © KnowMe 2022</p>
+                </div>
+                <div class="grid-item" id="rrss">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="grid-item">
+                    <a class="footlink" href="">Términos y usos</a>
+                </div>  
+        </div>
+    </footer>
+    <script src="../scripts/prueba2.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

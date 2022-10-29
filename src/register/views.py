@@ -7,8 +7,4 @@ titlehead = 'Match - FAQ'
 
 
 def register(request):
- 
     return HttpResponse(varyfunbase.head1+titlehead+varyfunbase.head2+varyfunbase.navbar+varyfunregister.body+varyfunbase.footer)
-
-
-

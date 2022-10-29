@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-p^1w6a!_h*h!fdc4w5t_ary%t(0k(+g(&v8##&z2%)9lww5*9)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -31,12 +31,12 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
     'register',
     'home',
     'base',
@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'match.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+"""
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'matchdb',
@@ -84,6 +84,20 @@ DATABASES = {
         'PASSWORD': 'django321',
         'HOST': 'localhost',
         'PORT': '3306',
+    },"""
+DATABASES = {
+
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    },
+    'postgres': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '',  # Depende de cada uno
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
@@ -122,7 +136,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = "static/"
 STATIC_ROOT = '/match/site/public/static'
 MEDIA_ROOT = '/match/site/public/media'
 

@@ -16,6 +16,10 @@ def home(request):
     return render(request, "base/home.html")
 
 
+def login(request):
+    return render(request, "base/login.html")
+
+
 def about(request):
     return render(request, "base/about.html")
 

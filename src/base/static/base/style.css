@@ -1,16 +1,16 @@
 .ContentBackground {
   background: repeat center;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(136, 130, 130, 0.5)), url('./img/opcion_2.png'); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(136, 130, 130, 0.5)), url('./img/opcion_2.png');
   background-color: #6c757d;
   background-size: expand;
-  height: 100vh;
+  height: 80vh;
 }
 
-.navbar-nav.navbar-center {
+/* .navbar-nav.navbar-center {
   position: absolute;
   left: 50%;
   transform: translatex(-50%);
-}
+} */
 
 .divlogin {
   display: flex;

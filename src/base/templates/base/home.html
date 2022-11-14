@@ -1,6 +1,6 @@
 {% extends "base/base.html" %}
 
-{% block title %}Home{%endblock%} 
+{% block title %}Home{%endblock%}
 
 {% load static%}
 
@@ -8,7 +8,14 @@
 {% endblock %}
 
 {% block content %}
-<h1>{{ title }}</h1>
-<a href="{% url 'signup' %}" class="btn btn-danger" role="button">REGISTRAR</a>
-<a href="{% url 'signin' %}" class="btn btn-danger" role="button">INGRESAR</a>
-{% endblock %} 
+<div>
+    <div class="text-center text-white">
+        <h1>{{title}}</h1>
+    </div>
+
+    <div class="text-center">
+        <a href="{% url 'signin' %}" class="btn btn-secondary" role="button">INGRESAR</a>
+        <a href="{% url 'signup' %}" class="btn btn-dark" role="button">REGISTRAR</a>
+    </div>
+</div>
+{% endblock %}

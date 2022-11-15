@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate, get_user_model
 from django.db import IntegrityError
 from django.views.generic.base import TemplateView
-from .models import displayusername
 from requests import Response
+# from django.contrib.auth.decorators import login_required
 
 
 class HomePageView(TemplateView):

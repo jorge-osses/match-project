@@ -1,0 +1,29 @@
+{% extends "base/base.html" %}
+
+{% block title %} Dashboard {%endblock%} 
+
+{% load static%}
+
+{%block header%}
+{%endblock%}
+
+{%block content%}
+<div class="container text-center bg-white">
+    <h2 class="text-primary">dashboard</h2>
+    {% if request.user.is_superuser %}
+        {% for user in displayusername %}
+        <h3>
+            {{user.username}}
+        </h3>
+        {% endfor %}
+    {% else %}
+        <h3>
+            welcome
+        </h3>
+    {% endif %}
+
+</div>
+
+
+
+{%endblock%} 

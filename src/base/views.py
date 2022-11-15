@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect, get_list_or_404
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
-from django.contrib.auth import login, logout, authenticate
+from django.contrib.auth import login, logout, authenticate, get_user_model
 from django.db import IntegrityError
 from django.views.generic.base import TemplateView
+from .models import displayusername
+from requests import Response
 
 
 class HomePageView(TemplateView):
@@ -13,9 +15,6 @@ class HomePageView(TemplateView):
         context = super().get_context_data(**kwargs)
         context["title"] = "Match"
         return context
-        # return render(request, self.template_name, {
-        #     'title': 'Match'
-        # })
 
 
 class FaqView(TemplateView):
@@ -26,8 +25,12 @@ class AboutView(TemplateView):
     template_name = "base/about.html"
 
 
-class LoginView(TemplateView):
-    template_name = "base/login.html"
+class DashboardView(TemplateView):
+    template_name = "base/dashboard.html"
+
+    def get(self, request, *args, **kwargs):
+        displaynames = User.objects.all()
+        return render(request, self.template_name, {'displayusername': displaynames})
 
 
 def signup(request):
@@ -71,7 +74,7 @@ def signin(request):
             })
         else:
             login(request, user)
-            return redirect('faq')
+            return redirect('dashboard')
 
 
 def signout(request):

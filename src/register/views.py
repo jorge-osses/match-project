@@ -1,10 +1,7 @@
-from django.shortcuts import render, HttpResponse
-from register import varyfun as varyfunregister
-from base import varyfun as varyfunbase
+from django.shortcuts import render, redirect, get_list_or_404
+from django.views.generic.base import TemplateView
 
-titlehead = 'Match - FAQ'
+
 # Create your views here.
-
-
-def register(request):
-    return HttpResponse(varyfunbase.head1+titlehead+varyfunbase.head2+varyfunbase.navbar+varyfunregister.body+varyfunbase.footer)
+class RegisterView(TemplateView):
+    template_name = "register/register.html"

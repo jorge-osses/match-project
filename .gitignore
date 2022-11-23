@@ -1,1 +1,4 @@
 .env
+.prettierignore
+.gitignore
+__pycache__

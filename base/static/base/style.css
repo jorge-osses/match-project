@@ -3,7 +3,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(136, 130, 130, 0.801)), url('./img/opcion_2.png');
   background-color: #6c757d;
   background-size: expand;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 

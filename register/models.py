@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 options = [
@@ -8,6 +9,8 @@ options = [
 
 
 class Contact(models.Model):
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE)
     name = models.CharField(max_length=50, verbose_name='Nombre')
     lastname = models.CharField(max_length=50, verbose_name='Apellido')
     email = models.EmailField(verbose_name='Correo Electrónico')

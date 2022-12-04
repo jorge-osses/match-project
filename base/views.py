@@ -5,6 +5,8 @@ from django.contrib.auth import login, logout, authenticate, get_user_model
 from django.db import IntegrityError
 from django.views.generic.base import TemplateView
 from requests import Response
+from register.models import Contact
+from register.views import contact
 # from django.contrib.auth.decorators import login_required
 
 
@@ -77,7 +79,13 @@ def signin(request):
             })
         else:
             login(request, user)
-            return redirect('dashboard')
+
+            usuario = Contact.objects.get(user=request.user)
+            if not usuario.name:  # ver que no funciona la validacion
+
+                return redirect('contact')
+            else:
+                return redirect('dashboard')
 
 
 def signout(request):

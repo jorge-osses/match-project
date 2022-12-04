@@ -12,7 +12,9 @@
                 <form action="" method="POST">
                     {% csrf_token %}
     
-                    {{ form | crispy }}
+                    {{ form.as_p }}
+                    <h3 hidden>{{request.user.id}}</h3>
+
                     
                     <input class="btn btn-primary" type="submit" value="Enviar Mensaje" {% if 'ok' in request.GET %}disabled{% endif %}{% if 'error' in request.GET %}disabled{% endif %}>
                 </form>

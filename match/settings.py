@@ -64,6 +64,7 @@ ROOT_URLCONF = 'match.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        # Lo recomendado sería {'DIRS': [BASE_DIR / 'templates'],} y tener los templates en el directorio gral
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {

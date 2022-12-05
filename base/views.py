@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_list_or_404
+from django.shortcuts import render, redirect, get_list_or_404, get_object_or_404
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate, get_user_model
@@ -80,12 +80,10 @@ def signin(request):
         else:
             login(request, user)
 
-            usuario = Contact.objects.get(user=request.user)
-            if not usuario.name:  # ver que no funciona la validacion
-
-                return redirect('contact')
-            else:
+            if Contact.objects.filter(user=request.user).exists():
                 return redirect('dashboard')
+            else:
+                return redirect('contact')
 
 
 def signout(request):

@@ -28,12 +28,13 @@ SECRET_KEY = 'django-insecure-p^1w6a!_h*h!fdc4w5t_ary%t(0k(+g(&v8##&z2%)9lww5*9)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'registration',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -41,12 +42,12 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'base',
-    'registration'
+    'dashboard',
 ]
 
-CRISPY_TEMPLATE_PACK = 'uni_form'
-CRISPY_ALLOWED_TEMPLATE_PACKS = ('bootstrap4', 'bootstrap5')
-CRISPY_TEMPLATE_PACK = "bootstrap5"
+# CRISPY_TEMPLATE_PACK = 'uni_form'
+# CRISPY_ALLOWED_TEMPLATE_PACKS = ('bootstrap4', 'bootstrap5')
+# CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -146,6 +147,20 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 LOGOUT_REDIRECT_URL = 'home'
+
+#emails
+if DEBUG:
+   EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+   EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+else:
+    #aqui es donde hay que configurar un email para producción
+   pass
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'match.find.app@gmail.com'
+# EMAIL_HOST_PASSWORD = 'codoacodo123'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

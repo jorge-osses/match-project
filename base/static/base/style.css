@@ -16,10 +16,10 @@ a.footlink:hover {
   color: #FF5C5C;
 }
 
-::selection {
+/* ::selection {
   background: #FF5C5C;
   text-shadow: none;
-}
+} */
 
 footer {
   padding: 2rem 0;

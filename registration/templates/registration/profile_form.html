@@ -1,0 +1,70 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Perfil{% endblock %}
+{% block content %}
+<div class="col container bg-white">
+  <div class="row">
+    <h3 class="text-center">Formulario de Registro de Usuario</h3>
+    <p class="fs-5 text-center px-5">Muchas Gracias por tu Preferencia!</p>
+        <div class="col-md-6">
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+              <h3>Perfil - {{request.user.username}}</h3>
+              <div class="col-md-2">
+                {% if request.user.profile.pic %}
+                  <img src="{{request.user.profile.pic.url}}" class="img-fluid">
+                  <p class="mt-1">¿Borrar? <input type="checkbox" id="pic-clear" name="pic-clear" /></p>
+                {% else %}
+                  <img src="{% static 'registration/img/no-avatar.png' %}" class="img-fluid">
+                {% endif %}
+              </div>
+                <input type="file" name="pic" class="form-control-file mt-3" id="id_pic">
+                {{ form.name }}
+                {{ form.lastname }}
+                {{ form.gender }}
+                {{ form.nacionality }}
+                {{ form.profession }}
+                {{ form.status }}
+                {{ form.childs }}
+                {{ form.sports }}
+                {{ form.music }}
+                {{ form.food }}
+                {{ form.drink }}
+                <hr/>
+                <p>Tipo de Encuentro:</p>
+                {{ form.contact_type }}
+                <br/>
+                Suscribirme a Correos Informativos {{ form.subscription }}
+                <input type="email" value="{{request.user.email}}" class="form-control mt-3" readonly>
+                <p class="mt-3">Para editar el e-Mail presione <a href="{% url 'profile_email' %}">aquí</a> <br>
+                  Para cambiar tu contraseña haz clic <a href="{% url 'password_change' %}">aquí</a> 
+                </p>
+                <div class="text-center">
+                    <input class="btn btn-primary btn-block mt-3" type="submit" value="Actualizar" {% if 'ok' in request.GET %}disabled{% endif %}{% if 'error' in request.GET %}disabled{% endif %}>
+                </div>
+            </form>
+
+            {% if 'ok' in request.GET %}
+                <div class="alert alert-success mt-5" role="alert">
+                    <strong>El mensaje se ha enviado correctamente</strong>
+                </div>
+            {% endif %}
+
+            {% if 'error' in request.GET %}
+                <div class="alert alert-danger mt-5" role="alert">
+                    <strong>El mensaje no ha podido ser enviado. Por favor, intente más tarde</strong>
+                </div>
+            {% endif %}
+        </div>
+        <div class="col-md-6 mb-5">
+            <img class="float-bottom img-fluid" src={% static 'registration/img/logoMatch.jpg' %} alt="">
+        </div>
+  </div>
+
+  <hr>
+
+  <div class="d-grid gap-2 col-6 mx-auto mb-5">
+    <a class="btn btn-info btn-lg" href={% url 'home' %}>Volver al Inicio</a>
+  </div>
+</div>
+{% endblock %}

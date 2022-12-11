@@ -1,11 +1,11 @@
 {% extends 'base/base.html' %}
 {% block content %}
 
-<main class="container">
+<main role="main" class="container">
     <div class="row">
-        <div class="col-md-4 offset-md-4 mt-5">
+        <div class="col-md-4 offset-md-4 mt-5 mb-5">
             <form action="{% url 'signin' %}" method="POST" class="card card-body">
-                <h1 class="text-center">INGRESAR</h1>
+                <h3 class="text-center">INICIAR SESIÓN</h3>
                 {{error}}
                 {% csrf_token %}
                 <div class="mb-3">

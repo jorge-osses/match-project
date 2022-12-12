@@ -10,6 +10,7 @@ class ProfileListView(ListView):
     template_name = 'dashboard/profile_list.html'
     paginate_by = 1
 
+
 class ProfileDetailView(DetailView):
     model = Profile
     template_name = 'dashboard/profile_detail.html'

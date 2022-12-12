@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate, get_user_model
 from django.db import IntegrityError
 from django.views.generic.base import TemplateView
-from .forms import UserCreationFormWithEmail
+#from .forms import UserCreationFormWithEmail
 from django.views.generic import CreateView
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
@@ -21,11 +21,9 @@ class HomePageView(TemplateView):
         return context
 
 
-
 # class DashboardView(TemplateView):
 #     template_name = "base/dashboard.html"
 
 #     def get(self, request, *args, **kwargs):
 #         displaynames = User.objects.all()
 #         return render(request, self.template_name, {'displayusername': displaynames})
-

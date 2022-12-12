@@ -1,31 +1,66 @@
-{% extends 'base/base.html' %}
-{% load static %}
-{% block title %}{{profile.user}}{% endblock %}
+{% extends 'base/base.html' %} 
+{% load static %} 
+{% block title%}{{profile.user}}{% endblock %}
 {% block content %}
 <main role="main">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-9 mx-auto mb-5">
-        <form action="" method="post" enctype="multipart/form-data" class="card card-body mt-4">{% csrf_token %}
-          <div class="row">
-            <!-- Avatar -->
-            <div class="col-md-2">
-              {% if profile.pic %}
-                <img src="{{profile.pic.url}}" class="img-fluid">
-              {% else %}
-                <img src="{% static 'registration/img/no-avatar.jpg' %}" class="img-fluid">
-              {% endif %}
-            </div>
-            <!-- Campos -->
-            <div class="col-md-10">
-              <h3>{{profile.user}}</h3>
-              {% if profile.bio %}<p>{{profile.bio}}</p>{% endif %}
-              {% if profile.link %}<p><a href="{{profile.link}}" target="_blank">{{profile.link}}</a></p>{% endif %}
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9 mx-auto mb-5">
+				<form
+					action=""
+					method="post"
+					enctype="multipart/form-data"
+					class="card card-body mt-4"
+				>
+					{% csrf_token %}
+					<div class="row">
+						<!-- Avatar -->
+						<div class="col-md-2">
+							{% if profile.pic %}
+							<img src="{{profile.pic.url}}" class="img-fluid" />
+							{% else %}
+							<img
+								src="{% static 'registration/img/no-avatar.jpg' %}"
+								class="img-fluid"
+							/>
+							{% endif %}
+						</div>
+						<!-- Campos -->
+						<div class="col-md-10">
+							<h3>El perfil de {{profile.name}}</h3>
+							<p><b>Nombre y Apellido:</b> {{profile.name}}, {{profile.lastname}}</p>
+							<p><b>Género:</b> {{profile.gender}}</p>
+							<p><b>Nacionalidad:</b> {{profile.nacionality}}</p>
+							<p><b>Profesión:</b> {{profile.profession}}</p>
+							<p><b>Estado:</b> {{profile.status}}</p>
+							<p><b>Cantidad de hijos:</b> {{profile.childs}}</p>
+							<p><b>Gustos musicales:</b> {{profile.music}}</p>
+							<p><b>Gustos deportivos:</b> {{profile.sport}}</p>
+							<p><b>Gustos culinarios:</b> {{profile.food}}</p>
+							<p><b>Gustos de bebidas:</b> {{profile.drink}}</p>
+							<p><b>Tipo de contacto deseado:</b> {{profile.contact_type}}</p>
+							<p><b>Suscrito a mails?:</b> 
+                {% if profile.subscription %}
+                  Si
+                {% else %}
+                  No
+                {% endif %}
+                </p>
+
+
+							{% if profile.bio %}
+							<p>{{profile.bio}}</p>
+							{% endif %} {% if profile.link %}
+							<p>
+								<a href="{{profile.link}}" target="_blank">{{profile.link}}</a>
+							</p>
+							{% endif %}
+
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </main>
 {% endblock %}

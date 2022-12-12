@@ -20,7 +20,7 @@ class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ['pic', 'name', 'lastname', 'gender', 'nacionality', 'profession', 'status', 'childs',
-                  'sport', 'music', 'food', 'drink', 'contact_type', 'subscription']
+                  'sport', 'music', 'food', 'drink', 'contact_type', 'message', 'subscription']
         widgets = {
             'pic': forms.ClearableFileInput(attrs={'class': 'form-control-file mt-3'}),
             'name': forms.TextInput(attrs={'class': 'form-control mt-3', 'placeholder': 'Nombre'}),
@@ -35,6 +35,8 @@ class ProfileForm(forms.ModelForm):
             'food': forms.TextInput(attrs={'class': 'form-control mt-3', 'placeholder': 'Comida favorita'}),
             'drink': forms.TextInput(attrs={'class': 'form-control mt-3', 'placeholder': 'Bebida favorita'}),
             'contact_type': forms.Select(attrs={'class': 'form-control mt-3', 'placeholder': 'Encuentro'}),
+            'message': forms.Textarea(attrs={'class':'form-control mt-3', 'rows':3, 'placeholder':'Escribe sobre mi'}),
+
         }
         labels = {
             'name': '',
@@ -48,7 +50,8 @@ class ProfileForm(forms.ModelForm):
             'music': '',
             'food': '',
             'drink': '',
-            'Pic': '',
+            'pic': '',
+            'message': '',
         }
 
 class EmailForm(forms.ModelForm):

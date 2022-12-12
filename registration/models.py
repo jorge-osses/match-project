@@ -21,7 +21,7 @@ class Profile(models.Model):
     name = models.CharField(max_length=50, verbose_name='Nombre')
     lastname = models.CharField(max_length=50, verbose_name='Apellido')
     email = models.EmailField(verbose_name='Correo Electrónico')
-    message = models.TextField(verbose_name='Mensaje')
+    message = models.TextField(max_length=500, verbose_name='Mensaje')
     gender = models.CharField(
         max_length=50, verbose_name='Género', null=True, blank=True)
     nacionality = models.CharField(

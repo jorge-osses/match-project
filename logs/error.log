@@ -5165,3 +5165,201 @@
 [Wed Dec 14 03:56:02.240516 2022] [wsgi:error] [pid 5176:tid 140675245598272] [remote 192.168.0.150:51266] Se acaba de crear un usuario y su perfil enlazado
 [Wed Dec 14 03:56:21.838164 2022] [wsgi:error] [pid 5176:tid 140675363096128] [remote 181.166.147.105:40306] Se acaba de crear un usuario y su perfil enlazado
 [Wed Dec 14 04:15:05.385810 2022] [wsgi:error] [pid 7399:tid 140086210094656] [remote 192.168.0.150:53501] Se acaba de crear un usuario y su perfil enlazado
+[Wed Dec 14 05:01:21.995071 2022] [wsgi:error] [pid 8046:tid 139842308040256] [remote 181.166.147.105:40468] Se acaba de crear un usuario y su perfil enlazado
+[Wed Dec 14 12:25:22.213079 2022] [wsgi:error] [pid 771:tid 139895555962432] [remote 201.212.223.221:56409] Se acaba de crear un usuario y su perfil enlazado
+[Wed Dec 14 18:07:50.110117 2022] [wsgi:error] [pid 4562:tid 139999932192320] [remote 179.41.26.104:11713] Se acaba de crear un usuario y su perfil enlazado
+[Wed Dec 14 18:50:25.914122 2022] [wsgi:error] [pid 4562:tid 139999932192320] [remote 186.141.136.249:4177] Se acaba de crear un usuario y su perfil enlazado
+[Wed Dec 14 18:25:54.579981 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206] mod_wsgi (pid=6927): Failed to exec Python script file '/match/match/wsgi.py'.
+[Wed Dec 14 18:25:54.580059 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206] mod_wsgi (pid=6927): Exception occurred processing WSGI script '/match/match/wsgi.py'.
+[Wed Dec 14 18:25:54.580698 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206] Traceback (most recent call last):
+[Wed Dec 14 18:25:54.580761 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "/match/match/wsgi.py", line 16, in <module>
+[Wed Dec 14 18:25:54.580778 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]     application = get_wsgi_application()
+[Wed Dec 14 18:25:54.580792 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "/match/matchenv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Dec 14 18:25:54.580803 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]     django.setup(set_prefix=False)
+[Wed Dec 14 18:25:54.580833 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "/match/matchenv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+[Wed Dec 14 18:25:54.580860 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Dec 14 18:25:54.580875 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 87, in __getattr__
+[Wed Dec 14 18:25:54.580886 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]     self._setup(name)
+[Wed Dec 14 18:25:54.580898 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 74, in _setup
+[Wed Dec 14 18:25:54.580910 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]     self._wrapped = Settings(settings_module)
+[Wed Dec 14 18:25:54.580922 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 183, in __init__
+[Wed Dec 14 18:25:54.580933 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Dec 14 18:25:54.580946 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[Wed Dec 14 18:25:54.580957 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Dec 14 18:25:54.580969 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Wed Dec 14 18:25:54.580982 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Wed Dec 14 18:25:54.580996 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[Wed Dec 14 18:25:54.581009 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[Wed Dec 14 18:25:54.581022 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+[Wed Dec 14 18:25:54.581035 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+[Wed Dec 14 18:25:54.581048 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+[Wed Dec 14 18:25:54.581061 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[Wed Dec 14 18:25:54.581081 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]   File "/match/match/settings.py", line 147
+[Wed Dec 14 18:25:54.581099 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]     pass
+[Wed Dec 14 18:25:54.581120 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206]         ^
+[Wed Dec 14 18:25:54.581137 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49206] IndentationError: unindent does not match any outer indentation level
+[Wed Dec 14 18:26:06.938634 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208] mod_wsgi (pid=6927): Failed to exec Python script file '/match/match/wsgi.py'.
+[Wed Dec 14 18:26:06.938729 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208] mod_wsgi (pid=6927): Exception occurred processing WSGI script '/match/match/wsgi.py'.
+[Wed Dec 14 18:26:06.938844 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208] Traceback (most recent call last):
+[Wed Dec 14 18:26:06.938899 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "/match/match/wsgi.py", line 16, in <module>
+[Wed Dec 14 18:26:06.938914 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]     application = get_wsgi_application()
+[Wed Dec 14 18:26:06.938926 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "/match/matchenv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Dec 14 18:26:06.938937 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]     django.setup(set_prefix=False)
+[Wed Dec 14 18:26:06.938949 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "/match/matchenv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+[Wed Dec 14 18:26:06.938960 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Dec 14 18:26:06.938971 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 87, in __getattr__
+[Wed Dec 14 18:26:06.938982 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]     self._setup(name)
+[Wed Dec 14 18:26:06.938994 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 74, in _setup
+[Wed Dec 14 18:26:06.939005 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]     self._wrapped = Settings(settings_module)
+[Wed Dec 14 18:26:06.939016 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 183, in __init__
+[Wed Dec 14 18:26:06.939027 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Dec 14 18:26:06.939038 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[Wed Dec 14 18:26:06.939049 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Dec 14 18:26:06.939061 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Wed Dec 14 18:26:06.939073 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Wed Dec 14 18:26:06.939085 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[Wed Dec 14 18:26:06.939097 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[Wed Dec 14 18:26:06.939109 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+[Wed Dec 14 18:26:06.939121 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+[Wed Dec 14 18:26:06.939133 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+[Wed Dec 14 18:26:06.939145 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[Wed Dec 14 18:26:06.939163 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]   File "/match/match/settings.py", line 147
+[Wed Dec 14 18:26:06.939185 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]     pass
+[Wed Dec 14 18:26:06.939205 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208]         ^
+[Wed Dec 14 18:26:06.939221 2022] [wsgi:error] [pid 6927:tid 139638294308416] [remote 192.168.0.247:49208] IndentationError: unindent does not match any outer indentation level
+[Wed Dec 14 18:26:43.307667 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218] mod_wsgi (pid=6927): Failed to exec Python script file '/match/match/wsgi.py'.
+[Wed Dec 14 18:26:43.307868 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218] mod_wsgi (pid=6927): Exception occurred processing WSGI script '/match/match/wsgi.py'.
+[Wed Dec 14 18:26:43.308208 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218] Traceback (most recent call last):
+[Wed Dec 14 18:26:43.308406 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "/match/match/wsgi.py", line 16, in <module>
+[Wed Dec 14 18:26:43.308410 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]     application = get_wsgi_application()
+[Wed Dec 14 18:26:43.308413 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "/match/matchenv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Dec 14 18:26:43.308415 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]     django.setup(set_prefix=False)
+[Wed Dec 14 18:26:43.308418 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "/match/matchenv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+[Wed Dec 14 18:26:43.308420 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Dec 14 18:26:43.308423 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 87, in __getattr__
+[Wed Dec 14 18:26:43.308425 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]     self._setup(name)
+[Wed Dec 14 18:26:43.308428 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 74, in _setup
+[Wed Dec 14 18:26:43.308430 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]     self._wrapped = Settings(settings_module)
+[Wed Dec 14 18:26:43.308432 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 183, in __init__
+[Wed Dec 14 18:26:43.308434 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Dec 14 18:26:43.308437 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[Wed Dec 14 18:26:43.308439 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Dec 14 18:26:43.308442 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Wed Dec 14 18:26:43.308445 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Wed Dec 14 18:26:43.308448 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[Wed Dec 14 18:26:43.308451 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[Wed Dec 14 18:26:43.308460 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+[Wed Dec 14 18:26:43.308463 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+[Wed Dec 14 18:26:43.308466 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+[Wed Dec 14 18:26:43.308469 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[Wed Dec 14 18:26:43.308476 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]   File "/match/match/settings.py", line 147
+[Wed Dec 14 18:26:43.308481 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]     pass
+[Wed Dec 14 18:26:43.308489 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218]         ^
+[Wed Dec 14 18:26:43.308493 2022] [wsgi:error] [pid 6927:tid 139638277523008] [remote 192.168.0.247:49218] IndentationError: unindent does not match any outer indentation level
+[Wed Dec 14 18:27:26.026072 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224] mod_wsgi (pid=7228): Failed to exec Python script file '/match/match/wsgi.py'.
+[Wed Dec 14 18:27:26.026145 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224] mod_wsgi (pid=7228): Exception occurred processing WSGI script '/match/match/wsgi.py'.
+[Wed Dec 14 18:27:26.026510 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224] Traceback (most recent call last):
+[Wed Dec 14 18:27:26.026563 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "/match/match/wsgi.py", line 16, in <module>
+[Wed Dec 14 18:27:26.026578 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]     application = get_wsgi_application()
+[Wed Dec 14 18:27:26.026590 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "/match/matchenv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Dec 14 18:27:26.026601 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]     django.setup(set_prefix=False)
+[Wed Dec 14 18:27:26.026612 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "/match/matchenv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+[Wed Dec 14 18:27:26.026622 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Dec 14 18:27:26.026632 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 87, in __getattr__
+[Wed Dec 14 18:27:26.026642 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]     self._setup(name)
+[Wed Dec 14 18:27:26.026653 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 74, in _setup
+[Wed Dec 14 18:27:26.026663 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]     self._wrapped = Settings(settings_module)
+[Wed Dec 14 18:27:26.026673 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 183, in __init__
+[Wed Dec 14 18:27:26.026683 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Dec 14 18:27:26.026694 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[Wed Dec 14 18:27:26.026710 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Dec 14 18:27:26.026722 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Wed Dec 14 18:27:26.026733 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Wed Dec 14 18:27:26.026745 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[Wed Dec 14 18:27:26.026756 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[Wed Dec 14 18:27:26.026768 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+[Wed Dec 14 18:27:26.026779 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+[Wed Dec 14 18:27:26.026790 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+[Wed Dec 14 18:27:26.026802 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[Wed Dec 14 18:27:26.026818 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]   File "/match/match/settings.py", line 147
+[Wed Dec 14 18:27:26.026833 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]     pass
+[Wed Dec 14 18:27:26.026851 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224]         ^
+[Wed Dec 14 18:27:26.026866 2022] [wsgi:error] [pid 7228:tid 139950302406208] [remote 192.168.0.247:49224] IndentationError: unindent does not match any outer indentation level
+[Wed Dec 14 19:44:29.407722 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592] mod_wsgi (pid=14148): Failed to exec Python script file '/match/match/wsgi.py'.
+[Wed Dec 14 19:44:29.407788 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592] mod_wsgi (pid=14148): Exception occurred processing WSGI script '/match/match/wsgi.py'.
+[Wed Dec 14 19:44:29.408176 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592] Traceback (most recent call last):
+[Wed Dec 14 19:44:29.408239 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "/match/match/wsgi.py", line 16, in <module>
+[Wed Dec 14 19:44:29.408264 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]     application = get_wsgi_application()
+[Wed Dec 14 19:44:29.408286 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "/match/matchenv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Dec 14 19:44:29.408306 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]     django.setup(set_prefix=False)
+[Wed Dec 14 19:44:29.408327 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "/match/matchenv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+[Wed Dec 14 19:44:29.408347 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Dec 14 19:44:29.408368 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 87, in __getattr__
+[Wed Dec 14 19:44:29.408387 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]     self._setup(name)
+[Wed Dec 14 19:44:29.408415 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 74, in _setup
+[Wed Dec 14 19:44:29.408435 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]     self._wrapped = Settings(settings_module)
+[Wed Dec 14 19:44:29.408455 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 183, in __init__
+[Wed Dec 14 19:44:29.408475 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Dec 14 19:44:29.408496 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[Wed Dec 14 19:44:29.408515 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Dec 14 19:44:29.408536 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Wed Dec 14 19:44:29.408558 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Wed Dec 14 19:44:29.408580 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[Wed Dec 14 19:44:29.408602 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[Wed Dec 14 19:44:29.408653 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[Wed Dec 14 19:44:29.408677 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[Wed Dec 14 19:44:29.408699 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]   File "/match/match/settings.py", line 145, in <module>
+[Wed Dec 14 19:44:29.408719 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592]     EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+[Wed Dec 14 19:44:29.408747 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64592] NameError: name 'os' is not defined
+[Wed Dec 14 19:44:39.120956 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604] mod_wsgi (pid=14148): Failed to exec Python script file '/match/match/wsgi.py'.
+[Wed Dec 14 19:44:39.121190 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604] mod_wsgi (pid=14148): Exception occurred processing WSGI script '/match/match/wsgi.py'.
+[Wed Dec 14 19:44:39.121500 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604] Traceback (most recent call last):
+[Wed Dec 14 19:44:39.121593 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "/match/match/wsgi.py", line 16, in <module>
+[Wed Dec 14 19:44:39.121626 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]     application = get_wsgi_application()
+[Wed Dec 14 19:44:39.121787 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "/match/matchenv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Dec 14 19:44:39.121828 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]     django.setup(set_prefix=False)
+[Wed Dec 14 19:44:39.121867 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "/match/matchenv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+[Wed Dec 14 19:44:39.122139 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Dec 14 19:44:39.122228 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 87, in __getattr__
+[Wed Dec 14 19:44:39.122263 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]     self._setup(name)
+[Wed Dec 14 19:44:39.122307 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 74, in _setup
+[Wed Dec 14 19:44:39.122467 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]     self._wrapped = Settings(settings_module)
+[Wed Dec 14 19:44:39.122525 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 183, in __init__
+[Wed Dec 14 19:44:39.122564 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Dec 14 19:44:39.122600 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[Wed Dec 14 19:44:39.122626 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Dec 14 19:44:39.122652 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Wed Dec 14 19:44:39.122689 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Wed Dec 14 19:44:39.122725 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[Wed Dec 14 19:44:39.122755 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[Wed Dec 14 19:44:39.122781 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[Wed Dec 14 19:44:39.122805 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[Wed Dec 14 19:44:39.122828 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]   File "/match/match/settings.py", line 145, in <module>
+[Wed Dec 14 19:44:39.122850 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604]     EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+[Wed Dec 14 19:44:39.122897 2022] [wsgi:error] [pid 14148:tid 140103158281792] [remote 192.168.0.150:64604] NameError: name 'os' is not defined
+[Wed Dec 14 19:44:41.395737 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608] mod_wsgi (pid=14148): Failed to exec Python script file '/match/match/wsgi.py'.
+[Wed Dec 14 19:44:41.395781 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608] mod_wsgi (pid=14148): Exception occurred processing WSGI script '/match/match/wsgi.py'.
+[Wed Dec 14 19:44:41.395875 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608] Traceback (most recent call last):
+[Wed Dec 14 19:44:41.395908 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "/match/match/wsgi.py", line 16, in <module>
+[Wed Dec 14 19:44:41.395911 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]     application = get_wsgi_application()
+[Wed Dec 14 19:44:41.395915 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "/match/matchenv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Wed Dec 14 19:44:41.395927 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]     django.setup(set_prefix=False)
+[Wed Dec 14 19:44:41.395931 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "/match/matchenv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+[Wed Dec 14 19:44:41.395934 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Wed Dec 14 19:44:41.395937 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 87, in __getattr__
+[Wed Dec 14 19:44:41.395940 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]     self._setup(name)
+[Wed Dec 14 19:44:41.395943 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 74, in _setup
+[Wed Dec 14 19:44:41.395945 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]     self._wrapped = Settings(settings_module)
+[Wed Dec 14 19:44:41.395948 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "/match/matchenv/lib/python3.10/site-packages/django/conf/__init__.py", line 183, in __init__
+[Wed Dec 14 19:44:41.395951 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Wed Dec 14 19:44:41.395954 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[Wed Dec 14 19:44:41.395956 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]     return _bootstrap._gcd_import(name[level:], package, level)
+[Wed Dec 14 19:44:41.395959 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Wed Dec 14 19:44:41.395962 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Wed Dec 14 19:44:41.395966 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[Wed Dec 14 19:44:41.395969 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[Wed Dec 14 19:44:41.395972 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+[Wed Dec 14 19:44:41.395975 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[Wed Dec 14 19:44:41.395978 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]   File "/match/match/settings.py", line 145, in <module>
+[Wed Dec 14 19:44:41.395981 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608]     EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
+[Wed Dec 14 19:44:41.395990 2022] [wsgi:error] [pid 14148:tid 140103267386944] [remote 192.168.0.150:64608] NameError: name 'os' is not defined

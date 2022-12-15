@@ -141,7 +141,16 @@ if DEBUG:
    EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
 else:
     #aqui es donde hay que configurar un email para producción
-   pass
+   EMAIL_BACKEND = 'django_mailjet.backends.MailjetBackend'
+   EMAIL_HOST = 'in-v3.mailjet.com'
+   MAILJET_API_KEY = "a71faa73a96b17ecdb4330b64dce96a7"
+   MAILJET_API_SECRET = "3c184500a3052e96f504370ecd0e3bc7"
+   EMAIL_PORT = 25
+   EMAIL_USE_TLS = True
+   EMAIL_USE_SSL = False
+   EMAIL_TIMEOUT = 30
+   DEFAULT_FROM_EMAIL = 'match.find.app@gmail.com'
+   #pass
 
 
 MEDIA_URL = 'media/'

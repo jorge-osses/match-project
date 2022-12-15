@@ -28,7 +28,7 @@
 						<!-- Campos -->
 						<div class="col-md-10">
 							<h3>El perfil de {{profile.name}}</h3>
-							<p><b>Nombre y Apellido:</b> {{profile.name}}, {{profile.lastname}}</p>
+							<p><b>Nombre Completo:</b> {{profile.name}} {{profile.lastname}}</p>
 							<p><b>Género:</b> {{profile.gender}}</p>
 							<p><b>Nacionalidad:</b> {{profile.nacionality}}</p>
 							<p><b>Profesión:</b> {{profile.profession}}</p>
@@ -46,7 +46,8 @@
                   No
                 {% endif %}
                 </p>
-
+				<br>
+				<a href="{% url 'list' %}">Ir atras</a>
 
 							{% if profile.bio %}
 							<p>{{profile.bio}}</p>

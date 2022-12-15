@@ -51,10 +51,9 @@ class Profile(models.Model):
         auto_now_add=True, verbose_name='Fecha de Envío')
 
     class Meta:
-        ordering =['user__username']
+        ordering =['user__id']
 
 @receiver(post_save, sender=User)
 def ensure_profile_exists(sender, instance, **kwargs):
     if kwargs.get('created', False):
         Profile.objects.get_or_create(user=instance)
-        print("Se acaba de crear un usuario y su perfil enlazado")

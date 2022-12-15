@@ -8,8 +8,6 @@ from django import forms
 from .models import Profile
 
 
-# Create your views here.
-
 class SignUpView(CreateView):
     form_class = UserCreationFormWithEmail
     template_name = 'registration/signup.html'

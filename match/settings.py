@@ -133,7 +133,11 @@ STATIC_URL = "static/"
 
 STATIC_ROOT = "/match/static"
 
+LOGIN_REDIRECT_URL = 'list'
+
 LOGOUT_REDIRECT_URL = 'home'
+
+from .mailjet import *
 
 #emails
 if DEBUG:
@@ -141,15 +145,15 @@ if DEBUG:
    EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
 else:
     #aqui es donde hay que configurar un email para producción
-   EMAIL_BACKEND = 'django_mailjet.backends.MailjetBackend'
-   EMAIL_HOST = 'in-v3.mailjet.com'
-   MAILJET_API_KEY = "a71faa73a96b17ecdb4330b64dce96a7"
-   MAILJET_API_SECRET = "3c184500a3052e96f504370ecd0e3bc7"
+   EMAIL_BACKEND = EMAIL_BACKEND
+   EMAIL_HOST = EMAIL_HOST
+   MAILJET_API_KEY = MAILJET_API_KEY
+   MAILJET_API_SECRET = MAILJET_API_SECRET
    EMAIL_PORT = 25
    EMAIL_USE_TLS = True
    EMAIL_USE_SSL = False
    EMAIL_TIMEOUT = 30
-   DEFAULT_FROM_EMAIL = 'match.find.app@gmail.com'
+   DEFAULT_FROM_EMAIL = DEFAULT_FROM_EMAIL
    #pass
 
 

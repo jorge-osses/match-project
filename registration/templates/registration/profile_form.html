@@ -67,5 +67,9 @@
   <div class="d-grid gap-2 col-6 mx-auto pb-5">
     <a class="btn btn-info btn-lg" href="{% if user.is_authenticated  %} {% url 'list' %} {% else %} {% url 'home' %} {% endif %}">Volver al Inicio</a>
   </div>
+  <div class="d-grid gap-2 col-6 mx-auto pb-5">
+    <a class="btn btn-danger btn-lg" href="mailto:match.find.app@gmail.com?subject=Baja%20de%20cuenta%20de%20{{user.username}}&body=Necesito%20dar%20de%20baja%20a%20esta%20cuenta.%20Muchas%20gracias!!!">Eliminar cuenta</a>
+  </div>
+  <p>* Si usted quiere dar de baja su cuenta, debe presionar el botón 'Eliminar cuenta' y debe enviar la solicitud al administrador.</p>
 </div>
 {% endblock %}

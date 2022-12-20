@@ -10,8 +10,8 @@ sesión{% endblock %} {% block content %}
     <div class="row">
       <div class="col-md-9 mx-auto mb-5">
         {% if 'register' in request.GET %}
-        <p style="color: green">
-          Usuario registrado correctamente, ya podés identificarte
+        <p style="color: green; text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;">
+          Usuario registrado exitosamente, ya puedes iniciar sesión
         </p>
         {% endif %}
         <form action="" method="post" class="card card-body mt-4">
